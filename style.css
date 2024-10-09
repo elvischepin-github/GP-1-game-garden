@@ -300,7 +300,7 @@ body main section.content-games aside.right img {
   margin-bottom: 40px;
 }
 body main section.content-games aside.right div {
-  background-image: url(/statinis_baneris.png);
+  background-image: url(statinis_baneris.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 70% center;
