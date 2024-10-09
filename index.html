@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="lt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- swiper cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Game Garden</title>
+  </head>
+  <body>
+    <main data-aos="flip-down">
+      <!-- navigation bar -->
+      <nav class="first-nav">
+        <div>
+          <img src="logo.png" alt="Logo" />
+          <h1>GAME GARDEN</h1>
+          <h1 style="color: transparent">Sekite mus ir gaukite naujienas!</h1>
+        </div>
+
+        <div>
+          <a href="index.html">Pradinis</a>
+          <a href="thumb.html">Apie Mus</a>
+          <a target="_blank" href="https://store.steampowered.com/">Steam</a>
+          <a target="_blank" href="https://store.epicgames.com/en-US/"
+            >Epic Games</a
+          >
+        </div>
+      </nav>
+
+      <!-- swiper article -->
+
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="/Swiper/Naraka.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/Swiper/Apex.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/Swiper/Cyberpunk.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/Swiper/Firewatch.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/Swiper/Warframe.jpg" alt="" />
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+
+      <!-- trending games section -->
+      <section class="trending-games">
+        <figure>
+          <img src="Games/counter_strike.jpg" alt="Counter Strike" />
+          <div>
+            <h4>Valve&#174;</h4>
+            <h3>Counter-Strike 2</h3>
+            <p class="card-comment">
+              Teroristų ir specialiojo būrio šautinė kova.
+            </p>
+            <p class="card-game-type">
+              Pirmojo asmens šaudyklė, šaudyklė, kelių žaidėjų, konkurencinis,
+              veiksmas.
+            </p>
+            <div class="link-container">
+              <h4>Nemokamai</h4>
+              <a href="1.counter_strike.html">Daugiau</a>
+            </div>
+          </div>
+        </figure>
+
+        <figure>
+          <img src="Games/lethal_company.jpg" alt="Lethal Company" />
+          <div>
+            <h4>Zeekerss&#174;</h4>
+            <h3>Lethal Company</h3>
+            <p class="card-comment">
+              Rinkite žaliavas kompanijai, įvairių monstrų apsuptyje... Arba jus
+              atleis!
+            </p>
+            <p class="card-game-type">Kooperatyvas, siaubo, pirmasis asmuo.</p>
+            <div class="link-container">
+              <h4>9.75€</h4>
+              <a href="2.lethal_company.html">Daugiau</a>
+            </div>
+          </div>
+        </figure>
+
+        <figure>
+          <img src="Games/baldurs_gate.jpg" alt="Baldur's Gate" />
+          <div>
+            <h4>Larian Studios&#174;</h4>
+            <h3>Baldur's Gate 3</h3>
+            <p class="card-comment">
+              Rinkitės savo sprendimą, kiekvienas labai svarbus nugalint
+              priešus!
+            </p>
+            <p class="card-game-type">Rolės personašas, raundų pasirinkimai.</p>
+            <div class="link-container">
+              <h4>59.99€</h4>
+              <a href="3.baldurs_gate.html">Daugiau</a>
+            </div>
+          </div>
+        </figure>
+
+        <figure>
+          <img src="Games/pubg.jpg" alt="PUBG" />
+          <div>
+            <h4>Krafton&#174;</h4>
+            <h3>PUBG: Battlegrounds</h3>
+            <p class="card-comment">Komandinis šaudyklės išgyvenimas.</p>
+            <p class="card-game-type">
+              Išgyvenimas, šaudyklė, karališka kova, konkurencinis.
+            </p>
+            <div class="link-container">
+              <h4>Nemokamai</h4>
+              <a href="4.pubg.html">Daugiau</a>
+            </div>
+          </div>
+        </figure>
+
+        <figure>
+          <img src="Games/call_of_duty.jpg" alt="Call of Duty" />
+          <div>
+            <h4>Activision&#174;</h4>
+            <h3>Call of Duty</h3>
+            <p class="card-comment">
+              Karinė kova prieš priešinga komanda, tankai, lėktuvai, laivai!
+            </p>
+            <p class="card-game-type">Pirmo asmens šaudyklė, veiksmas.</p>
+            <div class="link-container">
+              <h4>69.99€</h4>
+              <a href="5.call_of_duty.html">Daugiau</a>
+            </div>
+          </div>
+        </figure>
+
+        <figure>
+          <img src="Games/fifa_24.jpg" alt="EA Football Club 24" />
+          <div>
+            <h4>Electronic Arts&#174;</h4>
+            <h3>EA Sports FC 24</h3>
+            <p class="card-comment">
+              Pajuskite futbolo arena su savo mėgstamiausia komanda!
+            </p>
+            <p class="card-game-type">Futbolas, sportas.</p>
+            <div class="link-container">
+              <h4>69.99€</h4>
+              <a href="6.fifa_24.html">Daugiau</a>
+            </div>
+          </div>
+        </figure>
+
+        <figure>
+          <img src="Games/dota_2.jpg" alt="Dota 2" />
+          <div>
+            <h4>Valve&#174;</h4>
+            <h3>Dota 2</h3>
+            <p class="card-comment">
+              Pasirinke savo herojų, su savo komanda nugalėkite ir užkariaukite
+              priešus.
+            </p>
+            <p class="card-game-type">Rolės strategija, bazės okupavimas.</p>
+            <div class="link-container">
+              <h4>Nemokamai</h4>
+              <a href="7.dota_2.html">Daugiau</a>
+            </div>
+          </div>
+        </figure>
+
+        <figure>
+          <img src="Games/the_finals.jpg" alt="The Finals" />
+          <div>
+            <h4>Embark Studios&#174;</h4>
+            <h3>The Finals</h3>
+            <p class="card-comment">
+              Užstaisykite savo ginklą, nes jūsų laukia narši kova prieš
+              priešus.
+            </p>
+            <p class="card-game-type">Pirmo asmens šaudyklė, komandinis.</p>
+            <div class="link-container">
+              <h4>Nemokamai</h4>
+              <a href="8.the_finals.html">Daugiau</a>
+            </div>
+          </div>
+        </figure>
+
+        <figure>
+          <img src="Games/war_thunder.jpg" alt="War Thunder" />
+          <div>
+            <h4>Gaijin Entertainment&#174;</h4>
+            <h3>War Thunder</h3>
+            <p class="card-comment">
+              Pasirinkite savo specializaciją: orą, vandenį, žemę ir nugalėkite
+              priešus!
+            </p>
+            <p class="card-game-type">
+              Kova su sunkiosiomis karinėmis priemonėmis.
+            </p>
+            <div class="link-container">
+              <h4>Nemokamai</h4>
+              <a href="9.war_thunder.html">Daugiau</a>
+            </div>
+          </div>
+        </figure>
+      </section>
+      <footer><i>Visos Teisės Apsaugotos &#169;</i></footer>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="javascript.js"></script>
+  </body>
+</html>

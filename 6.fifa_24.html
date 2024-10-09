@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="lt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Game Garden</title>
+  </head>
+  <body>
+    <main data-aos="flip-down">
+      <!-- navigation bar -->
+      <nav class="first-nav">
+        <div>
+          <img src="logo.png" alt="Logo" />
+          <h1>GAME GARDEN</h1>
+        </div>
+
+        <div>
+          <a href="index.html">Pradinis</a>
+          <a href="thumb.html">Apie Mus</a>
+          <a target="_blank" href="https://store.steampowered.com/">Steam</a>
+          <a target="_blank" href="https://store.epicgames.com/en-US/"
+            >Epic Games</a
+          >
+        </div>
+      </nav>
+
+      <div class="banner">
+        <img
+          src="/Games/fifa_24.jpg"
+          style="object-position: center 15%"
+          alt=""
+        />
+      </div>
+
+      <!-- content games section -->
+      <section class="content-games">
+        <aside class="left">
+          <h1>FIFA 24</h1>
+          <div class="iframe">
+            <iframe
+              width="1038"
+              height="584"
+              src="https://www.youtube.com/embed/XhP3Xh4LMA8?autoplay=1&mute=1"
+              title="EA SPORTS FC 24 | Official Gameplay Trailer"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <h2>Žaidimo Momentai</h2>
+          <div class="screenshots">
+            <img src="/Screenshots/Fifa 24/3.1.jpg" />
+            <img src="/Screenshots/Fifa 24/3.2.jpg" />
+            <img src="/Screenshots/Fifa 24/3.3.jpg" />
+            <img src="/Screenshots/Fifa 24/3.4.jpg" />
+          </div>
+        </aside>
+        <aside class="right">
+          <div></div>
+          <p>
+            „EA Sports FC 24“ yra futbolo tematikos vaizdo žaidimas, kurį sukūrė
+            EA Vancouver ir EA Romania, kurį EA Sports visame pasaulyje išleido
+            2023 m. rugsėjo 29 d. Tai pirmoji EA Sports FC serijos dalis po
+            sėkmingos FIFA serijos partnerystės su FIFA 23.
+            <br />
+            <br />
+            Žaidimo viršelyje standartinio leidimo „Manchester City“ puolėjas
+            Erlingas Haalandas. „Ultimate Edition“ demonstruoja 31 žinomą esamą
+            ir buvusią žaidėją visame pasaulyje, primenantį Sgt. Pepper's Lonely
+            Hearts Club Band albumo viršelis. Įžymūs veikėjai yra Samas Kerras,
+            Virgilis van Dijkas, Son Heung-minas, Zinedine'as Zidane'as, Pelé ir
+            Davidas Beckhamas.
+            <br />
+            <br />
+            Atskleidę Ultimate Edition viršelį, gerbėjai išreiškė susirūpinimą
+            dėl kai kurių figūrų panašumo į tikrus žaidėjus. EA viceprezidentas
+            Johnas Shepherdas patikino, kad žaidimo panašumai su realaus
+            gyvenimo žaidėjais pagerėjo. Jis paaiškino, kad įtraukus daugybę
+            žaidėjų, turinčių EA Sports FC 24 licencijas, viršelio dizainas tapo
+            sudėtingesnis. Po viršelio debiuto žaidėjai taip pat pateikė
+            atsiliepimų, juokaudami apie tam tikrus veidus, ypač apie Andrea
+            Pirlo figūrą.
+          </p>
+        </aside>
+      </section>
+      <footer><i>Visos Teisės Apsaugotos &#169;</i></footer>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="javascript.js">
+      history.scrollRestoration = "manual";
+      $(window).on("beforeunload", function () {
+      $(window).scrollTop(0);
+      });
+    </script>
+  </body>
+</html>

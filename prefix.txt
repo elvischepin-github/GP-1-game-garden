@@ -1,0 +1,485 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital@0;1&display=swap");
+@-webkit-keyframes spining {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+@keyframes spining {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+@-webkit-keyframes jump {
+  0% {
+    text-shadow: 0 0 0 #ffd700;
+  }
+  100% {
+    text-shadow: 400px 0 1px #ffd700;
+  }
+}
+@keyframes jump {
+  0% {
+    text-shadow: 0 0 0 #ffd700;
+  }
+  100% {
+    text-shadow: 400px 0 1px #ffd700;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  font-size: 17px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  color: #c2c2c4;
+}
+
+body {
+  background-color: #15171e;
+}
+body main {
+  width: calc(100vw - 17px);
+}
+body main nav.first-nav {
+  border-radius: 10px;
+  margin: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: calc(100vw - 34px);
+  background: #23252a;
+}
+body main nav.first-nav div img {
+  height: 40px;
+  margin: 10px;
+  margin-left: 15px;
+  -webkit-animation: spining 2s alternate infinite;
+          animation: spining 2s alternate infinite;
+}
+body main nav.first-nav div h1 {
+  color: white;
+  margin-left: 10px;
+}
+body main nav.first-nav div h1:nth-of-type(2) {
+  -webkit-animation: jump 2s alternate infinite;
+          animation: jump 2s alternate infinite;
+}
+body main nav.first-nav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 64px;
+}
+body main nav.first-nav div a:nth-last-child(1) {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+body main nav.first-nav div a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: auto;
+  padding: 0 15px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  font-weight: bolder;
+}
+body main nav.first-nav div a:hover {
+  color: white;
+  background-color: #2b2d33;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+body main div.swiper {
+  border-radius: 20px;
+  width: auto;
+  height: 400px;
+  margin: 0 5px 0 12px;
+  color: red;
+  --swiper-pagination-color: #ffd700;
+}
+body main div.swiper div.swiper-button-prev,
+body main div.swiper div.swiper-button-next {
+  color: #ffd700;
+}
+body main div.swiper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right;
+     object-position: right;
+  background-position: top;
+}
+body main div.banner {
+  width: 90%;
+  height: 400px;
+  margin: auto;
+}
+body main div.banner img {
+  border-radius: 20px;
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+body main section.trending-games {
+  border-radius: 10px;
+  margin: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
+  background: #15171e;
+  width: 100%;
+  height: 100%;
+}
+body main section.trending-games figure {
+  background-color: #23252a;
+  max-width: 400px;
+  border-radius: 20px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+body main section.trending-games figure:hover {
+  scale: 1.05;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: rotateZ(-1deg);
+      -ms-transform: rotate(-1deg);
+          transform: rotateZ(-1deg);
+  -webkit-box-shadow: 0 0 80px -60px #ffd700;
+          box-shadow: 0 0 80px -60px #ffd700;
+}
+body main section.trending-games figure img {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  max-width: 400px;
+}
+body main section.trending-games figure div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  max-width: 400px;
+  height: 250px;
+  padding: 20px;
+  background-color: #23252a;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+body main section.trending-games figure div h4:nth-of-type(1) {
+  color: #ababab;
+  letter-spacing: 5px;
+  font-size: 1.1rem;
+}
+body main section.trending-games figure div h3 {
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  font-size: 1.3rem;
+}
+body main section.trending-games figure div p.card-comment {
+  color: #ffb401;
+}
+body main section.trending-games figure div p.card-game-type {
+  margin-bottom: 7px;
+}
+body main section.trending-games figure div div.link-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+}
+body main section.trending-games figure div div.link-container h4 {
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+  color: white;
+}
+body main section.trending-games figure div div.link-container a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 150px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: #ffd700;
+  color: black;
+  border: none;
+  font-weight: bolder;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+body main section.trending-games figure div div.link-container a:hover {
+  border: 4px solid #9e8600;
+  -webkit-box-shadow: 0 0 10px -5px #ffd700;
+          box-shadow: 0 0 10px -5px #ffd700;
+  font-size: 1.075rem;
+  letter-spacing: 0.075px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+body main section.content-games {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+  height: auto;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 20px;
+  background-color: #23252a;
+}
+body main section.content-games aside.left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 25px;
+}
+body main section.content-games aside.left h1 {
+  font-size: 36px;
+  z-index: 1;
+  border-radius: 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: white;
+  margin-bottom: 30px;
+}
+body main section.content-games aside.left div.iframe {
+  -webkit-box-shadow: 0 0 50px -15px black;
+          box-shadow: 0 0 50px -15px black;
+  border-radius: 20px;
+}
+body main section.content-games aside.left div.iframe iframe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-radius: 20px;
+  border: 1px solid #15171e;
+  width: 100%;
+  height: 350px;
+}
+body main section.content-games aside.left h2 {
+  font-size: 26px;
+  z-index: 1;
+  margin: 30px 0 30px 0;
+  color: white;
+}
+body main section.content-games aside.left div.references {
+  background-color: #15171e;
+  border-radius: 10px;
+  padding: 10px 15px;
+  height: 150px;
+  overflow-y: scroll;
+  position: relative;
+}
+body main section.content-games aside.left div.references div a {
+  color: #c2c2c4;
+}
+body main section.content-games aside.left div.references img {
+  margin-top: 5px;
+  height: 140px;
+  top: 0;
+  right: 1%;
+  position: absolute;
+}
+body main section.content-games aside.left div.screenshots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+}
+body main section.content-games aside.left div.screenshots img {
+  padding: 2px;
+  width: 45%;
+  aspect-ratio: 16/9;
+  border: 2px solid #15171e;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 50px -15px black;
+          box-shadow: 0 0 50px -15px black;
+  -webkit-filter: grayscale(70%);
+          filter: grayscale(70%);
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+body main section.content-games aside.left div.screenshots img:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-box-shadow: 0 0 20px -10px #ffd700;
+          box-shadow: 0 0 20px -10px #ffd700;
+}
+body main section.content-games aside.right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 25px;
+  background-color: #2b2d33;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+body main section.content-games aside.right img {
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 50px -15px black;
+          box-shadow: 0 0 50px -15px black;
+  width: 100%;
+  margin-bottom: 40px;
+}
+body main section.content-games aside.right div {
+  background-image: url(/statinis_baneris.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 80% center;
+  height: 200px;
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid #15171e;
+  -webkit-box-shadow: 0 0 50px -15px black;
+          box-shadow: 0 0 50px -15px black;
+  margin-bottom: 40px;
+}
+body main section.content-games aside.right p {
+  line-height: 25px;
+  letter-spacing: 0.5px;
+}
+body footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50px;
+  width: 600px;
+  margin: auto;
+  margin-top: 40px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #23252a;
+}
+body footer i {
+  font-family: Fira Sans Extra Condensed;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="lt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Game Garden</title>
+  </head>
+  <body>
+    <main data-aos="flip-down">
+      <!-- navigation bar -->
+      <nav class="first-nav">
+        <div>
+          <img src="logo.png" alt="Logo" />
+          <h1>GAME GARDEN</h1>
+        </div>
+
+        <div>
+          <a href="index.html">Pradinis</a>
+          <a href="thumb.html">Apie Mus</a>
+          <a target="_blank" href="https://store.steampowered.com/">Steam</a>
+          <a target="_blank" href="https://store.epicgames.com/en-US/"
+            >Epic Games</a
+          >
+        </div>
+      </nav>
+
+      <div class="banner">
+        <img src="/Games/pubg.jpg" style="object-position: center 25%" alt="" />
+      </div>
+
+      <!-- content games section -->
+      <section class="content-games">
+        <aside class="left">
+          <h1>PUBG</h1>
+          <div class="iframe">
+            <iframe
+              width="1814"
+              height="1020"
+              src="https://www.youtube.com/embed/u1oqfdh4xBY?autoplay=1&mute=1"
+              title="PUBG: BATTLEGROUNDS Cinematic trailer | PUBG"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <h2>Žaidimo Momentai</h2>
+          <div class="screenshots">
+            <img src="/Screenshots/PUBG/7.1.jpg" alt="" />
+            <img src="/Screenshots/PUBG/7.2.jpg" alt="" />
+            <img src="/Screenshots/PUBG/7.3.jpg" alt="" />
+            <img src="/Screenshots/PUBG/7.4.jpg" alt="" />
+          </div>
+        </aside>
+        <aside class="right">
+          <div></div>
+          <p>
+            PUBG: Battlegrounds, anksčiau žinomas kaip PlayerUnknown's
+            Battlegrounds, yra Battle Royale žaidimas, kurį sukūrė PUBG Studios
+            ir išleido Krafton. Įkvėptas japonų filmo „Battle Royale“ (2000 m.),
+            jis išsivystė iš ankstesnių Brendano „PlayerUnknown“ Greene
+            modifikacijų kitiems žaidimams. PUBG yra pirmoji PUBG Universe
+            serijos dalis.
+            <br />
+            <br />
+            Žaidimas žaidžiamas trečiojo arba pirmojo asmens perspektyvoje. Iki
+            100 žaidėjų iššoka parašiutu į salą, ieško ginklų ir bando išgyventi
+            pašalindami kitus. Žaidimo zona laikui bėgant mažėja, verčia
+            susidurti ir paskutinis išlikęs žaidėjas ar komanda tampa
+            nugalėtoju.
+            <br />
+            <br />
+            Iš pradžių 2017 m. kovo mėn. buvo išleistas „Windows“ naudojant
+            išankstinę „Steam“ prieigą, o visas leidimas įvyko 2017 m. gruodžio
+            mėn. Jis taip pat buvo išleistas „Xbox One“ 2017 m. rugsėjį, o „PUBG
+            Mobile“, skirtas „Android“ ir „iOS“, išleistas 2018 m. Vėliau sekė
+            X/S serija ir PlayStation 5.
+            <br />
+            <br />
+            Nepaisant kai kurių techninių problemų, PUBG sulaukė teigiamų
+            atsiliepimų dėl naujų žaidimo elementų pristatymo. Tai išpopuliarino
+            „Battle Royale“ žanrą ir paskatino daugybę neoficialių Kinijos
+            klonų. Žaidimas laimėjo apdovanojimus ir nustatė Gineso rekordus.
+            Iki 2022 m. sausio mėn. ji uždirbo daugiau nei 13 mlrd. USD
+            pasaulinių pajamų.
+          </p>
+        </aside>
+      </section>
+      <footer><i>Visos Teisės Apsaugotos &#169;</i></footer>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="javascript.js">
+      history.scrollRestoration = "manual";
+      $(window).on("beforeunload", function () {
+      $(window).scrollTop(0);
+      });
+    </script>
+  </body>
+</html>

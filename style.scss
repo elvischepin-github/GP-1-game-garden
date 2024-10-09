@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital@0;1&display=swap");
+
+$gray: #23252a;
+$black: #15171e;
+$lightGray: #c2c2c4;
+$blue: #0074e0;
+$gold: #ffd700;
+
+@mixin boxDesign {
+  border-radius: 10px;
+  margin: 12px;
+}
+@mixin cardChin {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  max-width: 400px;
+  height: 250px;
+  padding: 20px;
+  background-color: $gray;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+@keyframes spining {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+@keyframes jump {
+  0% {
+    text-shadow: 0 0 0 $gold;
+  }
+  100% {
+    text-shadow: 400px 0 1px $gold;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-size: 17px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  color: $lightGray;
+}
+
+body {
+  background-color: $black;
+  main {
+    width: calc(100vw - 17px);
+    nav.first-nav {
+      @include boxDesign;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: calc(100vw - 34px);
+      background: $gray;
+      div {
+        img {
+          height: 40px;
+          margin: 10px;
+          margin-left: 15px;
+          animation: spining 2s alternate infinite;
+        }
+        h1 {
+          color: white;
+          margin-left: 10px;
+          &:nth-of-type(2) {
+            animation: jump 2s alternate infinite;
+          }
+        }
+      }
+      div {
+        display: flex;
+        align-items: center;
+        height: 64px;
+        a:nth-last-child(1) {
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+        }
+        a {
+          display: flex;
+          align-items: center;
+          height: 100%;
+          width: auto;
+          padding: 0 15px;
+          transition: 0.2s;
+          font-weight: bolder;
+          &:hover {
+            color: white;
+            background-color: #2b2d33;
+            transition: 0.2s;
+          }
+        }
+      }
+    }
+
+    // swiper \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+    div.swiper {
+      border-radius: 20px;
+      width: auto;
+      height: 400px;
+      margin: 0 5px 0 12px;
+      color: red;
+      --swiper-pagination-color: #ffd700;
+      div.swiper-button-prev,
+      div.swiper-button-next {
+        color: $gold;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: right;
+        background-position: top;
+      }
+    }
+    // banner
+    div.banner {
+      width: 90%;
+      height: 400px;
+      margin: auto;
+      img {
+        border-radius: 20px;
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        object-position: top;
+      }
+    }
+
+    // index.html card layout
+    section.trending-games {
+      @include boxDesign;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 50px;
+      margin-top: 50px;
+      background: $black;
+      width: 100%;
+      height: 100%;
+      figure {
+        background-color: $gray;
+        max-width: 400px;
+        border-radius: 20px;
+        transition: 0.3s;
+        &:hover {
+          scale: 1.05;
+          transition: 0.3s;
+          transform: rotateZ(-1deg);
+          box-shadow: 0 0 80px -60px $gold;
+        }
+        img {
+          border-top-right-radius: 20px;
+          border-top-left-radius: 20px;
+          max-width: 400px;
+        }
+        // trending games design for the cards
+        div {
+          @include cardChin;
+          h4:nth-of-type(1) {
+            color: #ababab;
+            letter-spacing: 5px;
+            font-size: 1.1rem;
+          }
+          h3 {
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            font-size: 1.3rem;
+          }
+          p.card-comment {
+            color: #ffb401;
+          }
+          p.card-game-type {
+            margin-bottom: 7px;
+          }
+          div.link-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0;
+            h4 {
+              letter-spacing: 2px;
+              font-size: 1.1rem;
+              color: white;
+            }
+            a {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 150px;
+              height: 50px;
+              border-radius: 20px;
+              background-color: $gold;
+              color: black;
+              border: none;
+              font-weight: bolder;
+              transition: 0.2s;
+              &:hover {
+                border: 4px solid #9e8600;
+                box-shadow: 0 0 10px -5px $gold;
+                font-size: 1.075rem;
+                letter-spacing: 0.075px;
+                transition: 0.2s;
+              }
+            }
+          }
+        }
+      }
+    }
+    // 1-9.html game description
+    section.content-games {
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      justify-content: center;
+      width: 90%;
+      height: auto;
+      margin: auto;
+      margin-top: 30px;
+      border-radius: 20px;
+      background-color: $gray;
+      aside.left {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex: 1;
+        padding: 25px;
+        h1 {
+          font-size: 36px;
+          z-index: 1;
+          border-radius: 10px;
+          width: max-content;
+          color: white;
+          margin-bottom: 30px;
+        }
+        div.iframe {
+          box-shadow: 0 0 50px -15px black;
+          border-radius: 20px;
+          iframe {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            border-radius: 20px;
+            border: 1px solid $black;
+            width: 100%;
+            height: 350px;
+            // aspect-ratio: 16 / 9;
+          }
+        }
+        h2 {
+          font-size: 26px;
+          z-index: 1;
+          margin: 30px 0 30px 0;
+          color: white;
+        }
+        // ---------------
+        div.references {
+          background-color: $black;
+          border-radius: 10px;
+          padding: 10px 15px;
+          height: 150px;
+          overflow-y: scroll;
+          position: relative;
+          div {
+            a {
+              color: $lightGray; // references <---
+            }
+          }
+          img {
+            margin-top: 5px;
+            height: 140px;
+            top: 0;
+            right: 1%;
+            position: absolute;
+          }
+        }
+        // ---------------
+        div.screenshots {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          gap: 30px;
+          img {
+            padding: 2px;
+            width: 45%;
+            aspect-ratio: 16 / 9;
+            border: 2px solid $black;
+            border-radius: 5px;
+            box-shadow: 0 0 50px -15px black;
+            filter: grayscale(70%);
+            transition: 1s;
+            &:hover {
+              filter: grayscale(0%);
+              transition: 0.2s;
+              box-shadow: 0 0 20px -10px $gold;
+            }
+          }
+        }
+      }
+      aside.right {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 25px;
+        background-color: #2b2d33;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        img {
+          border-radius: 20px;
+          box-shadow: 0 0 20px -10px black;
+          width: 100%;
+          margin-bottom: 40px;
+        }
+        div {
+          background-image: url(/statinis_baneris.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 70% center;
+          height: 200px;
+          width: 100%;
+          border-radius: 20px;
+          border: 1px solid $black;
+          box-shadow: 0 0 50px -15px black;
+          margin-bottom: 40px;
+        }
+        p {
+          line-height: 25px;
+          letter-spacing: 0.5px;
+        }
+      }
+    }
+  }
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 600px;
+    margin: auto;
+    margin-top: 40px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: $gray;
+    i {
+      font-family: Fira Sans Extra Condensed;
+    }
+  }
+}
+
+@media (min-width: 1450px) {
+  body {
+    main {
+      div.banner {
+        img {
+          object-fit: scale-down;
+        }
+      }
+    }
+  }
+}

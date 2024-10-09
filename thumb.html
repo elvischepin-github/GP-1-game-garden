@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="lt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Game Garden</title>
+  </head>
+  <body>
+    <main data-aos="flip-down">
+      <!-- navigation bar -->
+      <nav class="first-nav">
+        <div>
+          <img src="logo.png" alt="Logo" />
+          <h1>GAME GARDEN</h1>
+        </div>
+
+        <div>
+          <a href="index.html">Pradinis</a>
+          <a href="thumb.html">Apie Mus</a>
+          <a target="_blank" href="https://store.steampowered.com/">Steam</a>
+          <a target="_blank" href="https://store.epicgames.com/en-US/"
+            >Epic Games</a
+          >
+        </div>
+      </nav>
+
+      <div style="border-radius: 20px" class="banner">
+        <img
+          src="/statinis_baneris.png"
+          style="object-position: center"
+          style="border-radius: 20px"
+          alt=""
+        />
+      </div>
+
+      <!-- content games section -->
+      <section class="content-games">
+        <aside class="left">
+          <h1>VILNIAUS VERSLO KOLEGIJOS <br />STUDENTŲ PROJEKTAS</h1>
+          <div class="iframe">
+            <iframe
+              width="1022"
+              height="575"
+              src="https://www.youtube.com/embed/E5u5Eb8t82s?autoplay=1&mute=1"
+              title="Studijuok Vilniaus verslo kolegijoje!"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <h2>Projekto Naudojami Šaltiniai</h2>
+          <div class="references">
+            <div>
+              <a target="_blank" href="https://alphacoders.com/"
+                >https://alphacoders.com/
+              </a>
+              <br />
+              <a target="_blank" href="https://www.wallpaperflare.com/"
+                >https://www.wallpaperflare.com/
+              </a>
+              <br />
+              <a target="_blank" href="https://wallpapercave.com/"
+                >https://wallpapercave.com/
+              </a>
+              <br />
+              <a target="_blank" href="https://hdqwalls.com/"
+                >https://hdqwalls.com/</a
+              >
+              <br />
+              <a target="_blank" href="https://wallpapers.com/"
+                >https://wallpapers.com/</a
+              >
+              <br />
+              <a target="_blank" href="https://www.youtube.com"
+                >https://www.youtube.com</a
+              >
+              <br />
+              <a target="_blank" href="https://store.epicgames.com/"
+                >https://store.epicgames.com/</a
+              >
+              <br />
+              <a target="_blank" href="https://store.steampowered.com"
+                >https://store.steampowered.com</a
+              >
+              <br />
+              <a target="_blank" href="https://translate.google.com/"
+                >https://translate.google.com/</a
+              >
+            </div>
+            <img src="scroll.png" alt="" />
+          </div>
+        </aside>
+        <aside class="right">
+          <img src="/animacinis_baneris.gif" style="object-fit: fill" alt="" />
+          <p>
+            Mes esame programuotojai iš Vilniaus Verslo Kolegijos, studijuojame
+            internetines technologijas. Pristatome mūsų pilotinį projektą.
+            <br />
+            <br />
+            "Game Garden" - yra svietainė kurioje galima aptikti šiuo metu
+            populiariausius žaidimus esamoje žaidimų industrijoje. Tinklapiai
+            vaizduoja detalią informaciją apie kiekvieną žaidimą, vaizduojamos
+            akimirkos iš žaidimo bei rodomas anonsas.
+            <br />
+            <br />
+            Kadangi tai yra pilotinė svietainė, mes turime užmojų suteikti
+            auditorijai dar daugiau negu galime dabar. Tikslas būtų suteikti
+            informaciją apie naujausių žaidimų nuolaidas ir nuolaidų kodus iš
+            stebimų partnerių e-parduotuvių.
+            <br />
+            <br />
+            Svietainė sukurta naudojant HTML, CSS ir SASS technologijas bei
+            pasitelkiant JavaScript bibliotekų privalumais.
+          </p>
+        </aside>
+      </section>
+      <footer><i>Visos Teisės Apsaugotos &#169;</i></footer>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="javascript.js">
+      history.scrollRestoration = "manual";
+      $(window).on("beforeunload", function () {
+      $(window).scrollTop(0);
+      });
+    </script>
+  </body>
+</html>

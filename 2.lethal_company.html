@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="lt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Game Garden</title>
+  </head>
+  <body>
+    <main data-aos="flip-down">
+      <!-- navigation bar -->
+      <nav class="first-nav">
+        <div>
+          <img src="logo.png" alt="Logo" />
+          <h1>GAME GARDEN</h1>
+        </div>
+
+        <div>
+          <a href="index.html">Pradinis</a>
+          <a href="thumb.html">Apie Mus</a>
+          <a target="_blank" href="https://store.steampowered.com/">Steam</a>
+          <a target="_blank" href="https://store.epicgames.com/en-US/"
+            >Epic Games</a
+          >
+        </div>
+      </nav>
+
+      <div class="banner">
+        <img
+          src="/Games/lethal_company.jpg"
+          style="object-position: center 45%"
+          alt=""
+        />
+      </div>
+
+      <!-- content games section -->
+      <section class="content-games">
+        <aside class="left">
+          <h1>LETHAL COMPANY</h1>
+          <div class="iframe">
+            <iframe
+              width="1629"
+              height="758"
+              src="https://www.youtube.com/embed/Su6OsTb1w9Q?autoplay=1&mute=1"
+              title="Lethal Company - Official Trailer"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media;"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <h2>Žaidimo Momentai</h2>
+          <div class="screenshots">
+            <img src="/Screenshots/Lethal company/2.1.jpg" alt="" />
+            <img src="/Screenshots/Lethal company/2.2.jpg" alt="" />
+            <img src="/Screenshots/Lethal company/2.3.jpg" alt="" />
+            <img src="/Screenshots/Lethal company/2.4.jpg" alt="" />
+          </div>
+        </aside>
+        <aside class="right">
+          <div></div>
+          <p>
+            „Lethal Company“ yra kooperatyvinis išgyvenimo siaubo vaizdo
+            žaidimas, sukurtas Zeekerss, populiarėjantis Steam platformoje 2023
+            m. lapkritį. Išleistas ankstyvoje Microsoft Windows prieigoje 2023
+            m. spalio 23 d., žaidimas vyksta retrofuturistinėje
+            post-apokaliptinėje visatoje.
+            <br />
+            <br />
+            „Mirtinoje kompanijoje“ žaidėjai turi rinkti išteklius iš apleistų
+            pramoninių palydovų, vengdami spąstų, pavojų aplinkai ir monstrų.
+            Žaidėjai prisiima samdomų darbuotojų vaidmenį įmonėje, kurių
+            užduotis yra per trijų dienų ciklą įvykdyti didėjančias pelno
+            kvotas.
+            <br />
+            <br />
+            Žaidimas, kurį galima žaisti su nuo vieno iki keturių žaidėjų
+            pirmojo asmens perspektyvoje, yra skirtas mėnulio tyrinėjimui ir
+            išteklių rinkimui. Žaidėjai bendrauja žaidimo balso ir teksto
+            pokalbiais, tyrinėdami apleistus mėnulius, kad rinktų išteklius,
+            vadinamus „laužu“. Surinktas laužas gali būti parduodamas įmonei
+            žaidimo kreditams.
+            <br />
+            <br />
+            Žaidime yra įvairių mėnulio aplinkų su atsitiktinai sugeneruotais
+            elementais, sudėtingomis oro sąlygomis ir įvairių rūšių būtybėmis.
+            Žaidėjai turi greitai grįžti į savo laivą prieš vidurnaktį, kad
+            neįstrigtų.
+            <br />
+            <br />
+            Žaidėjai vienu metu gali neštis iki keturių daiktų, įskaitant
+            nešiojamąją įrangą ir įrankius. Jie naudoja žaidimų terminalus, kad
+            įsigytų įrangą ir humoristinius laivo atnaujinimus naudodami
+            uždirbtus kreditus. Terminalai taip pat leidžia žaidėjams peržiūrėti
+            vieni kitų pozicijas ir manipuliuoti tam tikrais žaidimo elementais.
+          </p>
+        </aside>
+      </section>
+      <footer><i>Visos Teisės Apsaugotos &#169;</i></footer>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="javascript.js">
+      history.scrollRestoration = "manual";
+      $(window).on("beforeunload", function () {
+      $(window).scrollTop(0);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="lt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Game Garden</title>
+  </head>
+  <body>
+    <main data-aos="flip-down">
+      <!-- navigation bar -->
+      <nav class="first-nav">
+        <div>
+          <img src="logo.png" alt="Logo" />
+          <h1>GAME GARDEN</h1>
+        </div>
+
+        <div>
+          <a href="index.html">Pradinis</a>
+          <a href="thumb.html">Apie Mus</a>
+          <a target="_blank" href="https://store.steampowered.com/">Steam</a>
+          <a target="_blank" href="https://store.epicgames.com/en-US/"
+            >Epic Games</a
+          >
+        </div>
+      </nav>
+
+      <div class="banner">
+        <img
+          src="/Games/dota_2.jpg"
+          style="object-position: center 25%"
+          alt=""
+        />
+      </div>
+
+      <!-- content games section -->
+      <section class="content-games">
+        <aside class="left">
+          <h1>DOTA 2</h1>
+          <div class="iframe">
+            <iframe
+              width="1038"
+              height="584"
+              src="https://www.youtube.com/embed/tmn5HXW-3Wk?autoplay=1&mute=1"
+              title="DOTA 2 - Official Trailer (Mac, PC)"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <h2>Žaidimo Momentai</h2>
+          <div class="screenshots">
+            <img src="/Screenshots/Dota 2/4.1.jpg" />
+            <img src="/Screenshots/Dota 2/4.2.jpg" />
+            <img src="/Screenshots/Dota 2/4.3.jpg" />
+            <img src="/Screenshots/Dota 2/4.4.jpg" />
+          </div>
+        </aside>
+        <aside class="right">
+          <div></div>
+          <p>
+            Valve“ sukurta „Dota 2“ yra MOBA, kurioje dvi penkių žaidėjų
+            komandos siekia sunaikinti priešingos komandos „senąją“ – gyvybiškai
+            svarbią struktūrą savo bazėje. Žaidėjai valdo unikalius herojus,
+            suskirstytus į pagrindinius (vežėjų) ir pagalbinius vaidmenis.
+            <br />
+            <br />
+            Herojai ir sugebėjimai: Žaidime yra 124 žaidžiami herojai, kurių
+            kiekvienas turi skirtingus sugebėjimus. Pagrindiniai herojai pradeda
+            silpni, tačiau žaidimo eigoje stiprėja, o palaikymo herojai suteikia
+            naudos. Žaidėjai pasirenka herojus prieš rungtynių rengimo fazę, o
+            pasirinkimai turi įtakos komandos strategijai. be
+            <br />
+            <br />
+            Žemėlapis ir struktūra: Žemėlapį sudaro dvi bazės, Radiant ir Dire,
+            esančios priešinguose kampuose. Trys juostos jungia bazes, saugomas
+            gynybiniais bokštais. Kompiuteriu valdomi šliaužikliai kerta šias
+            juostas, bandydami atakuoti priešo herojus ir struktūras. be
+            <br />
+            <br />
+            Džiunglėse, esančiose tarp juostų, yra neutralių šliaužtinukų.
+            Roshan, galingas neutralus šliaužimas, suteikia specialių daiktų.
+            Runos, periodiškai neršančios, suteikia laikiną galią. be
+            <br />
+            <br />
+            Ekonomika ir daiktai: Auksas, uždirbtas žudant roplius ir priešo
+            herojus, naudojamas daiktams pirkti. Paskutinis smūgis – žudantis
+            smūgis į šliaužimą – suteikia aukso. Sąjungininkų vienetų ir
+            struktūrų neigimas trukdo oponentams įgyti patirties. be
+          </p>
+        </aside>
+      </section>
+      <footer><i>Visos Teisės Apsaugotos &#169;</i></footer>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="javascript.js">
+      history.scrollRestoration = "manual";
+      $(window).on("beforeunload", function () {
+      $(window).scrollTop(0);
+      });
+    </script>
+  </body>
+</html>

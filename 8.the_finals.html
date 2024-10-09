@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="lt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Game Garden</title>
+  </head>
+  <body>
+    <main data-aos="flip-down">
+      <!-- navigation bar -->
+      <nav class="first-nav">
+        <div>
+          <img src="logo.png" alt="Logo" />
+          <h1>GAME GARDEN</h1>
+        </div>
+
+        <div>
+          <a href="index.html">Pradinis</a>
+          <a href="thumb.html">Apie Mus</a>
+          <a target="_blank" href="https://store.steampowered.com/">Steam</a>
+          <a target="_blank" href="https://store.epicgames.com/en-US/"
+            >Epic Games</a
+          >
+        </div>
+      </nav>
+
+      <div class="banner">
+        <img
+          src="/Games/the_finals.jpg"
+          style="object-position: center 20%"
+          alt=""
+        />
+      </div>
+
+      <!-- content games section -->
+      <section class="content-games">
+        <aside class="left">
+          <h1>The Finals</h1>
+          <div class="iframe">
+            <iframe
+              width="1038"
+              height="584"
+              src="https://www.youtube.com/embed/DiSDlPc7r0g?autoplay=1&mute=1"
+              title="The Finals - Launch Trailer | PS5 Games"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <h2>Žaidimo Momentai</h2>
+          <div class="screenshots">
+            <img src="/Screenshots/The Finals/8.1.jpg" />
+            <img src="/Screenshots/The Finals/8.2.jpg" />
+            <img src="/Screenshots/The Finals/8.3.jpg" />
+            <img src="/Screenshots/The Finals/8.4.jpg" />
+          </div>
+        </aside>
+        <aside class="right">
+          <div></div>
+          <p>
+            „The Finals“ yra nemokama pirmojo asmens šaudyklė, kurią sukūrė ir
+            išleido Embark Studios, „Nexon“ dukterinė įmonė. Žaidime
+            akcentuojamos komandinės rungtynės žemėlapiuose su griaunama
+            aplinka, skatinant žaidėjus strategiškai išnaudoti dinamišką
+            aplinką.
+            <br />
+            <br />
+            Žaidimo eiga: Per televiziją transliuojamame virtualiame kovinio
+            žaidimo šou „Finalas“ pasižymi holografine minia ir komentarais,
+            panašiais į sporto transliacijas. Žaidėjai sudaro trijų asmenų
+            komandas baziniame režime, vadinamame „Išgryninimo“ („Cashout“),
+            konkuruojančių dėl tikslų, pvz., atidaryti saugyklas ir nugabenti
+            juos į pinigų išėmimo vietą. Laimėtoją nustato komanda, kuri surenka
+            daugiausia žaidimo valiutos (monetų) pagal įvairias metrikas, tokias
+            kaip taškai, pašalinimai ir tikslai.
+            <br />
+            <br />
+            Veikėjų klasės: Žaidėjai pasirenka simbolius pagal skalę "Lengvas",
+            "Vidutinis", "Sunkus", turintis įtakos judėjimo greičiui, dydžiui ir
+            patvarumui. Kiekviena klasė turi unikalią įrangą ir sugebėjimus.
+            Lengvosiose klasėse daugiausia dėmesio skiriama greičiui ir
+            judėjimui, o sunkiosiose klasėse yra destruktyvių įrankių, o
+            vidutinėse klasėse siūlomi pagalbiniai dalykai, tokie kaip gydymo ir
+            atgaivinimo gebėjimai.
+            <br />
+            <br />
+            Naujasis žaidimo būdas: Žaidimas skatina besiformuojantį žaidimą
+            keičiant reljefą, oro sąlygas, dienos laiko pokyčius ir įvairias
+            komandos sudėtis. Žaidėjai gali bendrauti su aplinka, įskaitant
+            pakabintus daiktus, sprogstamus objektus ir sunaikinamus pastatus.
+            Ribota konstrukcija įmanoma naudojant tokius įrankius kaip „Goo Gun“
+            ir „Goo Granade“.
+          </p>
+        </aside>
+      </section>
+      <footer><i>Visos Teisės Apsaugotos &#169;</i></footer>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="javascript.js">
+      history.scrollRestoration = "manual";
+      $(window).on("beforeunload", function () {
+      $(window).scrollTop(0);
+      });
+    </script>
+  </body>
+</html>
