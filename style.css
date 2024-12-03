@@ -335,6 +335,9 @@ body footer i {
   body main div.banner img {
     object-fit: scale-down;
   }
+  .jumpy {
+  animation: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
