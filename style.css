@@ -338,8 +338,8 @@ body footer i {
 }
 
 @media (max-width: 1450px) {
-  .jumpy {
-    animation: none;
+  h1.jumpy {
+  animation: none !important;
   }
 }
 
