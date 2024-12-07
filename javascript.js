@@ -24,6 +24,9 @@ const swiper = new Swiper(".swiper", {
 });
 
 history.scrollRestoration = "manual";
-$(window).on("beforeunload", function () {
-  $(window).scrollTop(0);
-});
+
+function perkrovimas() {
+  window.onload = function () {
+    window.scrollTo(0, 0);
+  };
+}

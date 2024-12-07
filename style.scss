@@ -362,10 +362,33 @@ body {
   body {
     main {
       div.banner {
+        width: max-content;
         img {
-          object-fit: scale-down;
+          object-fit: fill;
         }
       }
     }
+  }
+}
+
+@media (max-width: 1450px) {
+  main {
+    nav.first-nav {
+      div.links {
+        width: max-content;
+        justify-content: space-evenly;
+        a {
+          padding: 0 7.5px;
+          font-size: 0.9rem;
+        }
+      }
+    }
+    div.banner {
+      display: none;
+    }
+  }
+
+  h1.jumpy {
+    display: none;
   }
 }

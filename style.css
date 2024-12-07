@@ -332,14 +332,27 @@ body footer i {
 }
 
 @media (min-width: 1450px) {
+  body main div.banner {
+    width: max-content;
+  }
   body main div.banner img {
-    object-fit: scale-down;
+    object-fit: fill;
   }
 }
-
 @media (max-width: 1450px) {
+  main nav.first-nav div.links {
+    width: max-content;
+    justify-content: space-evenly;
+  }
+  main nav.first-nav div.links a {
+    padding: 0 7.5px;
+    font-size: 0.9rem;
+  }
+  main div.banner {
+    display: none;
+  }
   h1.jumpy {
-  animation: none !important;
+    display: none;
   }
 }
 
