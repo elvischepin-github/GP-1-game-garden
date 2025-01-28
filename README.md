@@ -1,4 +1,4 @@
-Link ➵ https://elvischepin-github.github.io/webpage-game-garden/
+Link ➵ https://elvischepin-github.github.io/GP-1-game-garden/
 ---
 # Aprašymas
 Imitacinė (fiktyvinė) svetainė, skirta žaidimų nuolaidų kodų paieškai.  
